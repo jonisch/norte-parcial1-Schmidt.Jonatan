@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - LPPA 1er PArcial - 01/06/2020</title>
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <h1><b>¿Hay vida en otros planetas? - Sistemas solares</b></h1>
+        </header>
+
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <aside id="pub">
+            <nav>
+                <ul>
+                    <li><a href="/Home/Index">Inicio</a> </li>
+                    <li><a href="/Home/Cosmo">Cosmo</a> </li>  
+                </ul>
+            </nav>
+        </aside>
+
+        <footer>
+            <p>¿Hay vida en otros planetas? - 2020</p>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
