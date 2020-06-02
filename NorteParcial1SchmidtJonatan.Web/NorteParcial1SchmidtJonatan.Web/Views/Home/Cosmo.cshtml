@@ -1,7 +1,17 @@
-﻿
+﻿@using NorteParcial1SchmidtJonatan.Web.Models
 @{
     ViewBag.Title = "Cosmo";
 }
 
-<h2>Cosmo</h2>
+<h1>Constelaciones</h1> 
+<p>
+    <a href="/Home/Create">Nueva Constelación</a>
+</p>
 
+<hr />
+<ul>
+    @foreach (var item in Dominio.Get())
+    {
+        <li>Siglo: @item.Siglo | Nombre: @item.Nombre</li>
+    }
+</ul>
